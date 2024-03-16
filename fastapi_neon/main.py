@@ -18,7 +18,7 @@ engine = create_engine(
 )
 
 def create_db_and_tables():
-    SQLModel.metadata.create_all(engine)
+    SQLModel.metadata.create_all(engine) 
     
 @asynccontextmanager
 async def lifespan(app: FastAPI):
